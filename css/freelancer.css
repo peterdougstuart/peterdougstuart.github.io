@@ -223,17 +223,17 @@ header.masthead h2 {
 
 @media (min-width: 576px) {
   .portfolio {
-    margin-bottom: -10px;
+    margin-bottom: -30px;
   }
   .portfolio .portfolio-item {
-    margin-bottom: 10;
+    margin-bottom: 30px;
   }
 }
 
 .portfolio-modal .portfolio-modal-dialog {
-  padding: 3rem 0.5rem;
-  min-height: calc(100vh - 4rem);
-  margin: 1rem calc(1rem - 40px);
+  padding: 3rem 1rem;
+  min-height: calc(100vh - 2rem);
+  margin: 1rem calc(1rem - 8px);
   position: relative;
   z-index: 2;
   -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
