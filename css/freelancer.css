@@ -223,10 +223,10 @@ header.masthead h2 {
 
 @media (min-width: 576px) {
   .portfolio {
-    margin-bottom: -30px;
+    margin-bottom: -10px;
   }
   .portfolio .portfolio-item {
-    margin-bottom: 30px;
+    margin-bottom: 10;
   }
 }
 
