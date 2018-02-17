@@ -18,14 +18,13 @@ $(function() {
       }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+
+      var  formData = "entry.403528721="+name+"&entry.2059175141="+email+"&entry.1401323140="+message;
+
       $.ajax({
         url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfrgMGE65Xb2roJn5U4JA_3FYZbszyCnGwiq8bTJV8xWDM4vg/formResponse",
         type: "POST",
-        data: {
-          "entry.403528721": name,
-          "entry.2059175141": email,
-          "entry.1401323140": message
-        },
+        data: formData,
         cache: false,
         success: function() {
           // Success message
