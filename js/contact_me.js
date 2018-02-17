@@ -19,10 +19,6 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-
       var  formData = "_replyto="+email+"&text="+message+"\n"+name+"&submit=Send"
 
       $.ajax({
