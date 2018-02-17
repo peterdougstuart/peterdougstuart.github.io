@@ -19,10 +19,14 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
-      var  formData = "entry.403528721="+name+"&entry.2059175141="+email+"&entry.1401323140="+message;
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+
+      var  formData = "_replyto="+email+"&text="+message+"\n"+name+"&submit=Send"
 
       $.ajax({
-        url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfrgMGE65Xb2roJn5U4JA_3FYZbszyCnGwiq8bTJV8xWDM4vg/formResponse",
+        url: "https://formspree.io/mapmangame@gmail.com",
         type: "POST",
         data: formData,
         cache: false,
@@ -38,7 +42,6 @@ $(function() {
           //clear all fields
           $('#contactForm').trigger("reset");
         },
-        /*
         error: function(jqXHR, textStatus, errorThrown) {
           // Fail message
           $('#success').html("<div class='alert alert-danger'>");
@@ -49,7 +52,6 @@ $(function() {
           //clear all fields
           $('#contactForm').trigger("reset");
         },
-        */
         complete: function() {
           setTimeout(function() {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
