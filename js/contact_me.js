@@ -10,7 +10,6 @@ $(function() {
       // get values from FORM
       var name = $("input#name").val();
       var email = $("input#email").val();
-      var phone = $("input#phone").val();
       var message = $("textarea#message").val();
       var firstName = name; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
@@ -20,13 +19,12 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
+        url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSfrgMGE65Xb2roJn5U4JA_3FYZbszyCnGwiq8bTJV8xWDM4vg/formResponse",
         type: "POST",
         data: {
-          name: name,
-          phone: phone,
-          email: email,
-          message: message
+          "entry.403528721": name,
+          "entry.2059175141": email,
+          "entry.1401323140": message
         },
         cache: false,
         success: function() {
