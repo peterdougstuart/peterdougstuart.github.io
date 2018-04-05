@@ -19,13 +19,13 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
-      var  formData = '{"email":"'+email+'","text":"'+message+'","name":'+name+'","_gotcha":"dummy","submit":"Send"}'
+      var  formData = '{"email":"'+email+'","text":"'+message+'","name":'+name+'","_gotcha":"dummy","submit":"Send"}';
       alert(formData);
-      
+
       $.ajax({
         url: "https://formcarry.com/s/ry372W4oG",
         type: "POST",
-        dataType: "json"
+        dataType: "json",
         data: formData,
         cache: false,
         success: function() {
