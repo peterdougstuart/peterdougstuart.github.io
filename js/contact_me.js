@@ -20,7 +20,8 @@ $(function() {
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
 
       var  formData = '{"email":"'+email+'","text":"'+message+'","name":'+name+'","_gotcha":"dummy","submit":"Send"}'
-
+      alert(formData);
+      
       $.ajax({
         url: "https://formcarry.com/s/ry372W4oG",
         type: "POST",
