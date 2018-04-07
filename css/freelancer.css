@@ -130,9 +130,8 @@ section h2 {
   color: #71c0e2;
 }
 
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.8rem;
+#mainNav .navbar-toggler {  
+  padding: .25rem;
 }
 
 @media (min-width: 992px) {
@@ -381,4 +380,8 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+.hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before {
+  background-color: #fff;
 }
