@@ -31,18 +31,21 @@
   <link rel="manifest" href="manifest.json">
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+
     <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/0.9.3/hamburgers.min.css" rel="stylesheet" type="text/css">
+    
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet">
 
   </head>
 
@@ -52,26 +55,28 @@
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">MapMan</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
+        <button class="navbar-toggler navbar-toggler-right hamburger  hamburger--squeeze" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Screen Shots</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-center" href="#portfolio">Screen Shots</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#videos">Videos</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-center" href="#videos">Videos</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Meet the Team</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-center" href="#about">Meet the Team</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#behind">Behind the Scenes</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-center" href="#behind">Behind the Scenes</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-center" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -169,16 +174,20 @@
     </section>
 
     <!-- Videos Section -->
-    <section class="portfolio" id="videos">
+    <section class="portfolio pt-0" id="videos">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Videos</h2>
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-md-6 col-lg-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/bTCJR37DB_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9 mb-5">
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/bTCJR37DB_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </div>
           <div class="col-md-6 col-lg-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Dt5S8e8j-ec" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9 mb-5">            
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Dt5S8e8j-ec" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -189,18 +198,16 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-white">Meet the Team</h2>
         <hr class="star-light mb-5">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <img src="img/peter.png" />
+        <div class="row text-center">
+          <div class="col-8 offset-2 col-sm-4 offset-sm-0 mb-5">
+            <img src="img/peter.png"  class="img-fluid" alt="Creator: Peter Stuart" />
           </div>
-          <div class="col-lg-4 mr-auto">
-            <img src="img/fred.png" />
-
+          <div class="col-8 offset-2 col-sm-4 offset-sm-0 mb-5">
+            <img src="img/fred.png" class="img-fluid" alt="Art: Fred Mangan" />
           </div>
-          <div class="col-lg-4 mr-auto">
-            <img src="img/david.png" />
+          <div class="col-8 offset-2 col-sm-4 offset-sm-0 mb-5">
+            <img src="img/david.png" class="img-fluid" alt="Music: David Sedgewick" />
           </div>
-
         </div>
         <!--
         <div class="text-center mt-4">
@@ -214,18 +221,15 @@
     </section>
 
       <!-- Meet the Team Section -->
-    <section class="bg-primary text-white mb-0" id="behind">
+    <section class="bg-primary text-white mb-0 pt-0" id="behind">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">Behind the Scenes</h2>
         <hr class="star-light mb-5">
-        <div class="row">
-
         <p>
           <!--#71e2c9-->
         MapMan was coded on an iPhone using the amazing <a href="http://omz-software.com/pythonista/" target="_blank" style="color: #000000;font-weight: normal;">Pythonista</a>. In order to submit MapMan to the App Store it was built on a MacBook Air using the nifty <a href="https://github.com/omz/PythonistaAppTemplate" target="_blank" style="color: #000000;font-weight: normal;">Pythonista App Template</a>. We collaborated using <a href="http://www.slack.com" target="_blank" style="color: #000000;font-weight: normal;">Slack</a> and shared files using <a href="http://www.dropbox.com" target="_blank" style="color: #000000;font-weight: normal;">DropBox</a>. We got lots of help from the friendly folks on the <a href="https://forum.omz-software.com/category/5/pythonista" target="_blank"  style="color: #000000;font-weight: normal;">Pythonista Forum</a>. Why are we telling you this? MapMan told us to.
         </p>
 
-        </div>
         <!--
         <div class="text-center mt-4">
           <a class="btn btn-xl btn-outline-light" href="#">
@@ -506,19 +510,19 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.js" defer></script>
+    <script src="js/contact_me.js" defer></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/freelancer.js" defer></script>
 
   </body>
 
